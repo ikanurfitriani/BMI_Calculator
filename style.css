@@ -121,8 +121,8 @@ table, th, td {
   margin: auto;
   background:#f0f0f0;
   position:absolute;
-  bottom:-210px;
-  width:480px;
+  bottom:-215px;
+  width:100%;
   text-align:center;
   color:#808080;
   border: 3px solid black;
