@@ -106,13 +106,13 @@ button#calculate:hover {
   font-weight: 800;
 }
 #table {
-    height: 105px;
+    height: 110px;
     width: 480px;
     background-color: white;
     margin: 0 auto;
     border: 5px solid blue;
 }
-table, th, td {
+table, th, td, p {
     margin: auto;
     text-align: center;
     border: 1px solid black;
