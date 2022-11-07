@@ -117,17 +117,3 @@ table, th, td {
     text-align: center;
     border: 1px solid black;
 }
-#footer {
-  margin: auto;
-  background:#f0f0f0;
-  position:absolute;
-  bottom:-215px;
-  height: 50px;
-  width:100%;
-  text-align:center;
-  color:#808080;
-  border: 3px solid black;
-}
-#footer a {
-  color:#808080;
-}
