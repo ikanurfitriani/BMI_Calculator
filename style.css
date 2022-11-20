@@ -70,7 +70,7 @@ h1 {
 button#calculate {
   font-family: "Nunito", sans-serif;
   color: #fff;
-  background: #4f7df9;
+  background: #0044ff;
   font-size: 16px;
   border-radius: 12px;
   padding: 12px 0;
@@ -80,7 +80,7 @@ button#calculate {
   transition: background 0.2s ease;
 }
 button#calculate:hover {
-  background: #0044ff;
+  background: #4f7df9;
 }
 .result {
   padding: 30px 20px;
