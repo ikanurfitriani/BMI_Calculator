@@ -25,8 +25,8 @@ body {
 .box::before {
   content: "";
   position: absolute;
-  height: 120%;
-  width: 120%;
+  height: 110%;
+  width: 110%;
   left: -5%;
   top: -5%;
   background-color: rgba(255, 255, 255, 0.3);
@@ -92,7 +92,7 @@ button#calculate:hover {
 .result #result {
   font-size: 36px;
   font-weight: 900;
-  color: #4f7df9;
+  color: #123eb8;
   background-color: white;
   display: inline-block;
   padding: 7px 20px;
