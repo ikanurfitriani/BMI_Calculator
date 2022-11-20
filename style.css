@@ -8,7 +8,6 @@
 body {
   background: black;
   background-size: cover;
-  background-repeat: no-repeat;
   font-family: "Nunito", sans-serif;
 }
 .container {
@@ -29,8 +28,8 @@ body {
   position: absolute;
   height: 110%;
   width: 110%;
-  left: -5%;
-  top: -5%;
+  left: -15%;
+  top: -15%;
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0px 0px 166px -31px rgba(0, 0, 0, 0.15);
   border-radius: 60px;
@@ -108,7 +107,7 @@ button#calculate:hover {
 #table {
   height: 100px;
   width: 480px;
-  background-color: white;
+  background-color: rgb(231, 231, 231);
   margin: 0 auto;
   border: 5px solid blue;
 }
