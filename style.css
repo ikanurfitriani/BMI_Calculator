@@ -1,19 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   background: black;
   background-size: cover;
   font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 20px;
 }
+
 .container {
-  position: absolute;
-  left: 35%;
-  top: 20%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 38px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
 }
+
 .box {
   min-width: 200px;
   background: #b9b9b9;
@@ -22,6 +36,7 @@ body {
   position: relative;
   margin-bottom: 20px;
 }
+
 .box::before {
   content: "";
   position: absolute;
@@ -34,14 +49,17 @@ body {
   border-radius: 60px;
   z-index: -1;
 }
+
 h1 {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 2.25rem;
   padding: 30px 0;
 }
+
 .content {
   padding: 0 40px;
 }
+
 .input {
   background: #fff;
   box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
@@ -49,27 +67,30 @@ h1 {
   padding: 20px 0;
   margin-bottom: 20px;
 }
+
 .input label {
   display: block;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   color: #000;
   margin-bottom: 20px;
 }
+
 .input input {
   outline: none;
   border: none;
   border-bottom: 1px solid #4f7df9;
   width: 60%;
   text-align: center;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-family: "Nunito", sans-serif;
 }
+
 button#calculate {
   font-family: "Nunito", sans-serif;
   color: #fff;
   background: #0044ff;
-  font-size: 16px;
+  font-size: 1rem;
   border-radius: 12px;
   padding: 12px 0;
   width: 100%;
@@ -77,20 +98,24 @@ button#calculate {
   border: none;
   transition: background 0.2s ease;
 }
+
 button#calculate:hover {
   background: #4f7df9;
 }
+
 .result {
   padding: 30px 20px;
 }
+
 .result p {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 1.375rem;
   color: #000;
   margin-bottom: 15px;
 }
+
 .result #result {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 900;
   color: #123eb8;
   background-color: white;
@@ -99,22 +124,64 @@ button#calculate:hover {
   border-radius: 55px;
   margin-bottom: 25px;
 }
+
 #comment {
   color: #4f7df9;
   font-weight: 800;
 }
+
 #table {
-  height: 100px;
-  width: 480px;
+  width: 100%;
+  max-width: 600px; 
   background-color: rgb(231, 231, 231);
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   border: 5px solid blue;
-}
-table, th, td {
-  margin: auto;
   text-align: center;
-  border: 1px solid black;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
 table p {
   text-align: center;
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem; 
+  }
+  
+  .input input {
+    font-size: 1.25rem; 
+  }
+  
+  button#calculate {
+    font-size: 0.875rem; 
+  }
+  
+  .result p {
+    font-size: 1rem; 
+  }
+  
+  .result #result {
+    font-size: 1.5rem; 
+  }
+  
+  #table {
+    max-width: 100%; 
+    margin: 0 auto; 
+    border: 2px solid blue; 
+  }
+
+  th, td {
+    padding: 4px; 
+    font-size: 0.875rem; 
+  }
 }
